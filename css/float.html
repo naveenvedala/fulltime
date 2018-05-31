@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+	.main{
+		width: 1200px;
+		margin: auto;
+		background-color: grey;
+
+	}
+
+	.main>div{
+		width: 400px;
+		height: 400px;
+		float: left;
+	}
+
+	.box1{
+		background-color: orange;
+	}
+
+	.box2{
+		background-color: red;
+	}
+
+	.box3{
+		background-color: yellow;
+	}
+
+	.main::after, .main::before{
+		content: "";
+		width: 20px;
+		height: 20px;
+		display: block;
+		clear: both;
+	}
+
+		/**{
+			margin:0px;
+			padding: 0px;
+		}*/
+/*
+	h1{
+		background-color: green;
+		border-radius: 10px;
+		width: 250px;
+		text-align: center;
+		padding: 10px;
+	}
+
+	h3{
+		background-color: lightgrey;
+		border-radius: 5px;
+		width: 250px;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.tech{
+		display: none;
+	}
+
+	h1:hover{
+		background-color: yellow;
+	}
+
+	.main h1:hover{
+		display: inline-block;
+	}*/
+
+	@media screen and (max-width:1200px){
+		.box1, .box2{
+			width: 50%;
+		}
+		..box3{
+			width: 100%;
+		}
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<!-- <h1>Technologies</h1>
+		<div class="tech">
+			<h3>HTML</h3>	
+			<h3>CSS</h3>
+			<h3>JS</h3>
+		</div> -->
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</div>
+</body>
+</html>

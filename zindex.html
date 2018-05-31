@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Z-Index</title>
+	<style type="text/css">
+		.one{
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			background-color: orange;
+			position: relative;
+			top:80px;
+			right:160px;
+			z-index: 3;
+		}
+		.two{
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			background-color: red;
+			position: relative;
+			top:40px;
+			right:80px;
+			z-index: 5;
+		}
+		.three{
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			background-color: green;
+			position: relative;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="three"></div><!-- <div class="one"></div><div class="one"></div><div class="one"></div><div class="one"></div><div class="one"></div><div class="one"></div><div class="one"></div> -->
+</body>
+</html>

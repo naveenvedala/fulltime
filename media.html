@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media</title>
+
+
+
+	<style type="text/css">
+
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		.header{
+			max-width: 1920px;
+			background-color: orange;
+		}
+
+		.logo{
+			height: 30px;
+			float: left;
+			padding-top:20px;
+			padding-left:40px;
+		}
+
+		.header div{
+			padding-top: 20px;
+			float: right;
+		}
+
+		.header li{
+			list-style-type: none;
+			color:#4a90e2;
+			font-size: 24px;
+			float: left;
+			padding-right: 20px;
+		}
+
+		.menu{
+			float: right;
+			padding-right: 30px;
+			display: none;
+			padding-top: 20px;
+			height: 40px;
+		}
+
+		@media screen and (min-width: 880px){
+			.header div{
+				display: none;
+			}
+			.menu{
+				display: block;
+			}
+
+			.menu:hover+div{
+				display: block;
+				float: none;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="header">
+		<img  class="logo" src="logo.png">
+		<img class="menu" src="menu.png">
+		<div>
+			<ul>
+				<li>
+					Education
+				</li>
+				<li>
+					Innovation
+				</li>
+				<li>
+					Incubation
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

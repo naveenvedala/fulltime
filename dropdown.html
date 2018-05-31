@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drop Down</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+	
+
+		.something{
+			width: 200px;
+			margin:auto;
+			background-color: green;
+		}
+
+		.dropdown{
+			width: 200px;
+			text-align: center;
+			background-color: grey;
+			display: none;
+		}
+
+		.something:hover{
+			background-color: red;
+		}
+
+		.something:hover .dropdown{
+			display: block;
+		}
+
+		.dropdown p{
+			height: 30px;
+		}
+
+		.dropdown p:hover{
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="something">
+		<h1>Technologies</h1>
+		<div class="dropdown">
+			<p><a href="css.html">HTML</a></p>
+			<p><a href="div.html">CSS</a></p>
+			<p><a href="iframes.html">JS</a></p>
+		</div>
+	</div>
+
+</body>
+</html>

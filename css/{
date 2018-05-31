@@ -1,0 +1,26 @@
+{ 
+    "_id" : ObjectId(), 
+    "name" : "Future", 
+    "title" : "Future", 
+    "slug" : "/future", 
+    "updateDate" : ISODate("2018-03-17T13:45:40.000+0000"), 
+    "updateBy" : "System", 
+    "meta" : [
+ 
+    ], 
+    "video" : [
+        {
+            "url" : "/assets/videos/programs", 
+            "alt" : "programs", 
+
+        }
+    ], 
+    "image" : [
+        {
+            "url" : "/assets/images/programs", 
+            "alt" : "programs", 
+
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
