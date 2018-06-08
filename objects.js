@@ -97,25 +97,112 @@
 //  	name:"CBIT"
 //  }
 
-function greet(){
-	return "Hello "
-}
-// Function Constructor to create Person Object
-function person(name, college, age, address){
-	this.name = name;
-	this.college = college;
-	this.age = age;
-	this.address = address;
-	this.getDetails = function(){
-		return ` "Address" of ${this.name} is ${this.address}`;
-				// "Address' of " + this.name + "is " + this.address
-	}
-}
+// function greet(){
+// 	return "Hello "
+// }
+// // Function Constructor to create Person Object
+// function person(name, college, age, address){
+// 	this.name = name;
+// 	this.college = college;
+// 	this.age = age;
+// 	this.address = address;
+// 	this.getDetails = function(){
+// 		return ` "Address" of ${this.name} is ${this.address}`;
+// 				// "Address' of " + this.name + "is " + this.address
+// 	}
+// }
 
-var p1 = new person("Naveen", "MREC", 26, "Banjra Hills");
-var p2 = new person("Ram", "JNTU", 24, "Dilsukhnagar");
+// var p1 = new person("Naveen", "MREC", 26, "Banjra Hills");
+// var p2 = new person("Ram", "JNTU", 24, "Dilsukhnagar");
 
-p1.lastname = "Vedala";
+// p1.lastname = "Vedala";
 
-console.log(p1);
-console.log(p2);
+// console.log(p1);
+// console.log(p2);
+
+
+
+
+// class Animal{
+// 	constructor(name, kind){
+
+// 	}
+
+
+// 	bark(){
+
+// 	}
+
+// }
+
+
+// class Dog extends Animal{
+
+// 	bark1(){
+// 		super.bark();
+// 	///List Statments
+// 	}
+// }
+
+
+
+// Promises and Callbacks
+
+// function one(){
+// 	setTimeout(()=>{
+// 		console.log("One");
+// 	},Math.random()*1000+1000)
+// }
+
+// function two(){
+// 	setTimeout(()=>{
+// 		console.log("Two")
+// 	}, Math.random()*1000+1000)
+// }
+
+// fs.readdir(source, function (err, files) {
+//   if (err) {
+//     console.log('Error finding files: ' + err)
+//   } else {
+//     files.forEach(function (filename, fileIndex) {
+//       console.log(filename)
+//       gm(source + filename).size(function (err, values) {
+//         if (err) {
+//           console.log('Error identifying file size: ' + err)
+//         } else {
+//           console.log(filename + ' : ' + values)
+//           aspect = (values.width / values.height)
+//           widths.forEach(function (width, widthIndex) {
+//             height = Math.round(width / aspect)
+//             console.log('resizing ' + filename + 'to ' + height + 'x' + height)
+//             this.resize(width, height).write(dest + 'w' + width + '_' + filename, function(err) {
+//               if (err) console.log('Error writing file: ' + err)
+//             })
+//           }.bind(this))
+//         }
+//       })
+//     })
+//   }
+// })
+
+// let promise = new Promise((resolve, reject)=>{
+// 	//List satatments
+// 	if(true){
+// 		resolve("Success");
+// 	}else{
+// 		reject("Failed")
+// 	}
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
