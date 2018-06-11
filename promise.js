@@ -1,39 +1,39 @@
-let study1st = (attendance)=>{
-	return new Promise((resolve, reject)=>{
-		if(attendance){
-			resolve("Wirte Exams")
-		}else{
-			reject('Debar');
-		}
-	})
-}
+// let study1st = (attendance)=>{
+// 	return new Promise((resolve, reject)=>{
+// 		if(attendance){
+// 			resolve("Wirte Exams")
+// 		}else{
+// 			reject('Debar');
+// 		}
+// 	})
+// }
 
-let wirteExams = (success)=>{
-	return new Promise((resolve, reject)=>{
-		flag = false;
-		if(flag){
-			resolve("Passed")
-		}else{
-			reject("Detained");
-		}
-	});
-}
+// let wirteExams = (success)=>{
+// 	return new Promise((resolve, reject)=>{
+// 		flag = false;
+// 		if(flag){
+// 			resolve("Passed")
+// 		}else{
+// 			reject("Detained");
+// 		}
+// 	});
+// }
 
-let prometed = () =>{
-	return new Promise((resolve, reject)=>{
-		resolve("prometed");
-	})
-}
+// let prometed = () =>{
+// 	return new Promise((resolve, reject)=>{
+// 		resolve("prometed");
+// 	})
+// }
 
-study1st(true).then((out)=>{
-	return wirteExams(out);
-}).then((out)=>{
-	return prometed();
-}).then((out)=>{
-	console.log("Naveen got " + out);
-}).catch((e)=>{
-	console.log(e);
-})
+// study1st(true).then((out)=>{
+// 	return wirteExams(out);
+// }).then((out)=>{
+// 	return prometed();
+// }).then((out)=>{
+// 	console.log("Naveen got " + out);
+// }).catch((e)=>{
+// 	console.log(e);
+// })
 
 
 
@@ -74,3 +74,6 @@ study1st(true).then((out)=>{
 //     })
 //   }
 // })
+
+
+var xhttp = new XMLHttpRequest();
