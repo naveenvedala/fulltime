@@ -75,5 +75,30 @@
 //   }
 // })
 
+async function f() {
 
-var xhttp = new XMLHttpRequest();
+  let promise = new Promise((resolve, reject) => {
+
+    setTimeout(() => {
+    	if(false){
+    		reject("Failed")
+    	}
+    		resolve("Done")
+    	 }, Math.random()*1000)
+  });
+
+  var data = await promise;
+
+  console.log(data)
+
+  promise.then(e=>{
+  	console.log(e)
+  })
+
+   // wait till the promise resolves (*)
+
+  console.log("result");
+   // "done!"
+}
+
+f();
